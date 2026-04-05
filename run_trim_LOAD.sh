@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=trim_LOAD
 #SBATCH --output=trim_LOAD.log
+#SBATCH --partition=angsd_class
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
 #SBATCH --mem=40G
