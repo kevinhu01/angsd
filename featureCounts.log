@@ -1,0 +1,51 @@
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.6
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 12 BAM files                                     ||
+||                                                                            ||
+||                           SRR19243439.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243440.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243441.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243442.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243443.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243444.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243478.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243479.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243480.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243481.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243482.Aligned.sortedByCoord.out.bam        ||
+||                           SRR19243483.Aligned.sortedByCoord.out.bam        ||
+||                                                                            ||
+||             Output file : counts_data.txt                                  ||
+||                 Summary : counts_data.txt.summary                          ||
+||              Paired-end : yes                                              ||
+||        Count read pairs : yes                                              ||
+||              Annotation : hg38.knownGene.gtf (GTF)                         ||
+||      Dir for temp files : .                                                ||
+||                                                                            ||
+||                 Threads : 6                                                ||
+||                   Level : meta-feature level                               ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file hg38.knownGene.gtf ...                                ||
+||    Features : 1769117                                                      ||
+||    Meta-features : 236657                                                  ||
+||    Chromosomes/contigs : 439                                               ||
+||                                                                            ||
+|| Process BAM file SRR19243439.Aligned.sortedByCoord.out.bam...              ||
+||    Strand specific : reversely stranded                                    ||
+[2026-03-28T01:17:20.741] error: *** JOB 2722345 ON c0002 CANCELLED AT 2026-03-28T01:17:20 DUE to SIGNAL Terminated ***
