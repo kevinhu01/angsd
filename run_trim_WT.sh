@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=trim_WT
 #SBATCH --output=trim_WT.log
+#SBATCH --partition=angsd_class
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
 #SBATCH --mem=40G
