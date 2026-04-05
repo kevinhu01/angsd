@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=fastqc_LOAD
 #SBATCH --output=fastqc_LOAD.log
+#SBATCH --partition=angsd_class
 #SBATCH --nodes=1
 #SBATCH --ntasks=8
 #SBATCH --mem=40G
