@@ -1,0 +1,566 @@
+Starting QoRTs v1.3.6 (Compiled Tue Sep 25 11:21:46 EDT 2018)
+Starting time: (Thu Apr 02 11:43:18 EDT 2026)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=SRR19243440/alignments/SRR19243440.Aligned.sortedByCoord.out.bam
+  INPUT_ARG(gtffile)=/athena/angsd/scratch/klh4012/work/Project/referenceGenome/refgene/hg38.refGene.gtf
+  INPUT_ARG(outdir)=SRR19243440/qorts_new
+  INPUT_ARG(stranded)=true
+  INPUT_ARG(coordSorted)=true
+Created Log File: SRR19243440/qorts_new/QC.5vMzJHhTNeVg.log
+Warning: run-in-progress file "SRR19243440/qorts_new/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+Starting QC
+[Time: 2026-04-02 11:43:19] [Mem usage: [30MB / 643MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+NOTE: Function "overlapMatch" requires function "mismatchEngine". Adding "mismatchEngine" to the active function list...
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, InsertSize, 
+        JunctionCalcs, NVC, QualityScoreDistribution, StrandCheck, 
+        chromCounts, cigarLocusCounts, mismatchEngine, overlapMatch, 
+        readLengthDistro, writeBiotypeCounts, writeClippedNVC, 
+        writeDESeq, writeDEXSeq, writeGeneBody, writeGeneCounts, 
+        writeGenewiseGeneBody, writeJunctionSeqCounts, 
+        writeKnownSplices, writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+NOTE: Read length is not consistent.
+   In the first 10000 reads, read length varies from 36 to 76 (param maxReadLength=76)
+Note that using data that is hard-clipped prior to alignment is NOT recommended, because this makes it difficult (or impossible) to determine the sequencer read-cycle of each nucleotide base. This may obfuscate cycle-specific artifacts, trends, or errors, the detection of which is one of the primary purposes of QoRTs!In addition, hard clipping (whether before or after alignment) removes quality score data, and thus quality score metrics may be misleadingly optimistic. A MUCH preferable method of removing undesired sequence is to replace such sequence with N's, which preserves the quality score and the sequencer cycle information.
+   WARNING WARNING WARNING: Read length is not consistent, AND "--maxReadLength" option is not set!
+      QoRTs has ATTEMPTED to determine the maximum read length (76).
+      It is STRONGLY recommended that you use the --maxReadLength option 
+      to set the maximum possible read length, or else errors may occur if/when 
+      reads longer than 76 appear.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 76.
+[Time: 2026-04-02 11:43:24] [Mem usage: [265MB / 811MB]] [Elapsed Time: 00:00:05.0609]
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2026-04-02 11:43:43] [Mem usage: [3818MB / 7GB]] [Elapsed Time: 00:01:28.0551]
+Compiling flat feature annotation, internally in memory...
+.Internal flat feature annotation compiled!
+.QC Utilities Generated!
+[Time: 2026-04-02 11:44:53] [Mem usage: [3815MB / 7GB]] [Elapsed Time: 00:01:34.0511]
+..........[1000000 Read-Pairs processed] [Time: 2026-04-02 11:46:13] 
+...............[1000000 Read-Pairs processed] [Time: 2026-04-02 11:47:18] 
+......[2000000 Read-Pairs processed] [Time: 2026-04-02 11:47:50] 
+............[2000000 Read-Pairs processed] [Time: 2026-04-02 11:48:46] 
+.........[3000000 Read-Pairs processed] [Time: 2026-04-02 11:49:29] 
+..........[3000000 Read-Pairs processed] [Time: 2026-04-02 11:50:14] 
+...........[4000000 Read-Pairs processed] [Time: 2026-04-02 11:51:05] 
+........[4000000 Read-Pairs processed] [Time: 2026-04-02 11:51:41] 
+..............[5000000 Read-Pairs processed] [Time: 2026-04-02 11:52:49] 
+.....[5000000 Read-Pairs processed] [Time: 2026-04-02 11:53:13] 
+................[6000000 Read-Pairs processed] [Time: 2026-04-02 11:54:29] 
+...[6000000 Read-Pairs processed] [Time: 2026-04-02 11:54:42] 
+..................[7000000 Read-Pairs processed] [Time: 2026-04-02 11:56:09] 
+.[7000000 Read-Pairs processed] [Time: 2026-04-02 11:56:11] 
+...............
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[6GB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[6GB / 8GB]]
+..[8000000 Read-Pairs processed] [Time: 2026-04-02 11:57:20] 
+..
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[3890MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+.NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[4316MB / 8GB]]
+..[8000000 Read-Pairs processed] [Time: 2026-04-02 11:57:24] 
+.................[9000000 Read-Pairs processed] [Time: 2026-04-02 11:58:40] 
+.[9000000 Read-Pairs processed] [Time: 2026-04-02 11:58:44] 
+...................[10000000 Read-Pairs processed] [Time: 2026-04-02 12:00:06] 
+.[10000000 Read-Pairs processed] [Time: 2026-04-02 12:00:13] 
+..................[11000000 Read-Pairs processed] [Time: 2026-04-02 12:01:32] 
+..[11000000 Read-Pairs processed] [Time: 2026-04-02 12:01:40] 
+..................[12000000 Read-Pairs processed] [Time: 2026-04-02 12:03:03] 
+...[12000000 Read-Pairs processed] [Time: 2026-04-02 12:03:14] 
+............[2026-04-02T12:04:13.766] error: *** JOB 2738802 ON c0009 CANCELLED AT 2026-04-02T12:04:13 DUE to SIGNAL Terminated ***
+...[13000000 Read-Pairs processed] [Time: 2026-04-02 12:04:32] 
+..........[14000000 Read-Pairs processed] [Time: 2026-04-02 12:06:03] 
+..........[15000000 Read-Pairs processed] [Time: 2026-04-02 12:07:33] 
+..........[16000000 Read-Pairs processed] [Time: 2026-04-02 12:08:57] 
+..........[17000000 Read-Pairs processed] [Time: 2026-04-02 12:10:28] 
+...
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[4602MB / 9GB]]
+.......[18000000 Read-Pairs processed] [Time: 2026-04-02 12:11:06] 
+..........[19000000 Read-Pairs processed] [Time: 2026-04-02 12:11:15] 
+..........[20000000 Read-Pairs processed] [Time: 2026-04-02 12:11:19] 
+..........[21000000 Read-Pairs processed] [Time: 2026-04-02 12:11:24] 
+..........[22000000 Read-Pairs processed] [Time: 2026-04-02 12:12:55] 
+..........[23000000 Read-Pairs processed] [Time: 2026-04-02 12:13:45] 
+..........[24000000 Read-Pairs processed] [Time: 2026-04-02 12:14:02] 
+..........[25000000 Read-Pairs processed] [Time: 2026-04-02 12:15:38] 
+..........[26000000 Read-Pairs processed] [Time: 2026-04-02 12:17:06] 
+..........[27000000 Read-Pairs processed] [Time: 2026-04-02 12:18:32] 
+..........[28000000 Read-Pairs processed] [Time: 2026-04-02 12:20:00] 
+..........[29000000 Read-Pairs processed] [Time: 2026-04-02 12:21:28] 
+..........[30000000 Read-Pairs processed] [Time: 2026-04-02 12:22:57] 
+..........[31000000 Read-Pairs processed] [Time: 2026-04-02 12:24:23] 
+..........[32000000 Read-Pairs processed] [Time: 2026-04-02 12:25:44] 
+..........[33000000 Read-Pairs processed] [Time: 2026-04-02 12:27:02] 
+..........[34000000 Read-Pairs processed] [Time: 2026-04-02 12:28:18] 
+..........[35000000 Read-Pairs processed] [Time: 2026-04-02 12:30:08] 
+.........
+Finished reading SAM. Read: 35985807 reads/read-pairs.
+Finished reading SAM. Used: 26911226 reads/read-pairs.
+[Time: 2026-04-02 12:31:54] [Mem usage: [7GB / 9GB]] [Elapsed Time: 00:48:35.0528]
+> Read Stats:
+>   READ_PAIR_OK                   26911226
+>   TOTAL_READ_PAIRS               35985807
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   9074581
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+QoRTs completed WITH WARNINGS! See log for details.
+Done.
+Time spent on setup:           00:01:34.0512
+Time spent on SAM iteration:   00:47:01.0016
+                               (1.3065336193979662 minutes per million read-pairs)
+                               (1.7471023678618978 minutes per million read-pairs used)
+Time spent on file output:     00:00:47.0909
+Total runtime:                 00:49:23.0437
+Done. (Thu Apr 02 12:32:42 EDT 2026)
+Starting QoRTs v1.3.6 (Compiled Tue Sep 25 11:21:46 EDT 2018)
+Starting time: (Thu Apr 02 12:34:17 EDT 2026)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=SRR19243441/alignments/SRR19243441.Aligned.sortedByCoord.out.bam
+  INPUT_ARG(gtffile)=/athena/angsd/scratch/klh4012/work/Project/referenceGenome/refgene/hg38.refGene.gtf
+  INPUT_ARG(outdir)=SRR19243441/qorts_new
+  INPUT_ARG(stranded)=true
+  INPUT_ARG(coordSorted)=true
+Created Log File: SRR19243441/qorts_new/QC.8k7sSVAoiWT3.log
+Warning: run-in-progress file "SRR19243441/qorts_new/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+Starting QC
+[Time: 2026-04-02 12:34:17] [Mem usage: [30MB / 643MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+NOTE: Function "overlapMatch" requires function "mismatchEngine". Adding "mismatchEngine" to the active function list...
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, InsertSize, 
+        JunctionCalcs, NVC, QualityScoreDistribution, StrandCheck, 
+        chromCounts, cigarLocusCounts, mismatchEngine, overlapMatch, 
+        readLengthDistro, writeBiotypeCounts, writeClippedNVC, 
+        writeDESeq, writeDEXSeq, writeGeneBody, writeGeneCounts, 
+        writeGenewiseGeneBody, writeJunctionSeqCounts, 
+        writeKnownSplices, writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+NOTE: Read length is not consistent.
+   In the first 10000 reads, read length varies from 35 to 76 (param maxReadLength=76)
+Note that using data that is hard-clipped prior to alignment is NOT recommended, because this makes it difficult (or impossible) to determine the sequencer read-cycle of each nucleotide base. This may obfuscate cycle-specific artifacts, trends, or errors, the detection of which is one of the primary purposes of QoRTs!In addition, hard clipping (whether before or after alignment) removes quality score data, and thus quality score metrics may be misleadingly optimistic. A MUCH preferable method of removing undesired sequence is to replace such sequence with N's, which preserves the quality score and the sequencer cycle information.
+   WARNING WARNING WARNING: Read length is not consistent, AND "--maxReadLength" option is not set!
+      QoRTs has ATTEMPTED to determine the maximum read length (76).
+      It is STRONGLY recommended that you use the --maxReadLength option 
+      to set the maximum possible read length, or else errors may occur if/when 
+      reads longer than 76 appear.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 76.
+[Time: 2026-04-02 12:34:23] [Mem usage: [265MB / 811MB]] [Elapsed Time: 00:00:05.0544]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2026-04-02 12:35:48] [Mem usage: [3707MB / 7GB]] [Elapsed Time: 00:01:31.0019]
+..........[1000000 Read-Pairs processed] [Time: 2026-04-02 12:38:17] 
+..........[2000000 Read-Pairs processed] [Time: 2026-04-02 12:39:55] 
+..........[3000000 Read-Pairs processed] [Time: 2026-04-02 12:41:19] 
+..........[4000000 Read-Pairs processed] [Time: 2026-04-02 12:42:44] 
+..........[5000000 Read-Pairs processed] [Time: 2026-04-02 12:44:04] 
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[3750MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[5GB / 8GB]]
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[7GB / 8GB]]
+..........[6000000 Read-Pairs processed] [Time: 2026-04-02 12:44:41] 
+..........[7000000 Read-Pairs processed] [Time: 2026-04-02 12:45:57] 
+..........[8000000 Read-Pairs processed] [Time: 2026-04-02 12:47:22] 
+..........[9000000 Read-Pairs processed] [Time: 2026-04-02 12:48:48] 
+..........[10000000 Read-Pairs processed] [Time: 2026-04-02 12:50:14] 
+..........[11000000 Read-Pairs processed] [Time: 2026-04-02 12:51:41] 
+..........[12000000 Read-Pairs processed] [Time: 2026-04-02 12:52:02] 
+..........[13000000 Read-Pairs processed] [Time: 2026-04-02 12:52:08] 
+..........[14000000 Read-Pairs processed] [Time: 2026-04-02 12:53:20] 
+..........[15000000 Read-Pairs processed] [Time: 2026-04-02 12:54:13] 
+..........[16000000 Read-Pairs processed] [Time: 2026-04-02 12:54:55] 
+..........[17000000 Read-Pairs processed] [Time: 2026-04-02 12:56:21] 
+..........[18000000 Read-Pairs processed] [Time: 2026-04-02 12:57:45] 
+..........[19000000 Read-Pairs processed] [Time: 2026-04-02 12:59:10] 
+..........[20000000 Read-Pairs processed] [Time: 2026-04-02 13:00:39] 
+..........[21000000 Read-Pairs processed] [Time: 2026-04-02 13:02:01] 
+..........[22000000 Read-Pairs processed] [Time: 2026-04-02 13:03:18] 
+..........[23000000 Read-Pairs processed] [Time: 2026-04-02 13:04:29] 
+.........
+Finished reading SAM. Read: 23930697 reads/read-pairs.
+Finished reading SAM. Used: 17407673 reads/read-pairs.
+[Time: 2026-04-02 13:06:32] [Mem usage: [4776MB / 9GB]] [Elapsed Time: 00:32:15.0040]
+> Read Stats:
+>   READ_PAIR_OK                   17407673
+>   TOTAL_READ_PAIRS               23930697
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   6523024
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+QoRTs completed WITH WARNINGS! See log for details.
+Done.
+Time spent on setup:           00:01:31.0019
+Time spent on SAM iteration:   00:30:44.0021
+                               (1.2842640284707685 minutes per million read-pairs)
+                               (1.7655049777953282 minutes per million read-pairs used)
+Time spent on file output:     00:00:43.0424
+Total runtime:                 00:32:58.0464
+Done. (Thu Apr 02 13:07:16 EDT 2026)
+Starting QoRTs v1.3.6 (Compiled Tue Sep 25 11:21:46 EDT 2018)
+Starting time: (Thu Apr 02 13:08:08 EDT 2026)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=SRR19243442/alignments/SRR19243442.Aligned.sortedByCoord.out.bam
+  INPUT_ARG(gtffile)=/athena/angsd/scratch/klh4012/work/Project/referenceGenome/refgene/hg38.refGene.gtf
+  INPUT_ARG(outdir)=SRR19243442/qorts_new
+  INPUT_ARG(stranded)=true
+  INPUT_ARG(coordSorted)=true
+Created Log File: SRR19243442/qorts_new/QC.dK8V52uemIqe.log
+Warning: run-in-progress file "SRR19243442/qorts_new/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+Starting QC
+[Time: 2026-04-02 13:08:08] [Mem usage: [30MB / 643MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+NOTE: Function "overlapMatch" requires function "mismatchEngine". Adding "mismatchEngine" to the active function list...
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, InsertSize, 
+        JunctionCalcs, NVC, QualityScoreDistribution, StrandCheck, 
+        chromCounts, cigarLocusCounts, mismatchEngine, overlapMatch, 
+        readLengthDistro, writeBiotypeCounts, writeClippedNVC, 
+        writeDESeq, writeDEXSeq, writeGeneBody, writeGeneCounts, 
+        writeGenewiseGeneBody, writeJunctionSeqCounts, 
+        writeKnownSplices, writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+NOTE: Read length is not consistent.
+   In the first 10000 reads, read length varies from 39 to 76 (param maxReadLength=76)
+Note that using data that is hard-clipped prior to alignment is NOT recommended, because this makes it difficult (or impossible) to determine the sequencer read-cycle of each nucleotide base. This may obfuscate cycle-specific artifacts, trends, or errors, the detection of which is one of the primary purposes of QoRTs!In addition, hard clipping (whether before or after alignment) removes quality score data, and thus quality score metrics may be misleadingly optimistic. A MUCH preferable method of removing undesired sequence is to replace such sequence with N's, which preserves the quality score and the sequencer cycle information.
+   WARNING WARNING WARNING: Read length is not consistent, AND "--maxReadLength" option is not set!
+      QoRTs has ATTEMPTED to determine the maximum read length (76).
+      It is STRONGLY recommended that you use the --maxReadLength option 
+      to set the maximum possible read length, or else errors may occur if/when 
+      reads longer than 76 appear.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 76.
+[Time: 2026-04-02 13:08:13] [Mem usage: [265MB / 811MB]] [Elapsed Time: 00:00:05.0469]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2026-04-02 13:09:40] [Mem usage: [3460MB / 7GB]] [Elapsed Time: 00:01:31.0818]
+..........[1000000 Read-Pairs processed] [Time: 2026-04-02 13:12:09] 
+..........[2000000 Read-Pairs processed] [Time: 2026-04-02 13:13:45] 
+..........[3000000 Read-Pairs processed] [Time: 2026-04-02 13:15:13] 
+..........[4000000 Read-Pairs processed] [Time: 2026-04-02 13:16:43] 
+......
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[5GB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[6GB / 8GB]]
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[2405MB / 8GB]]
+....[5000000 Read-Pairs processed] [Time: 2026-04-02 13:17:46] 
+..........[6000000 Read-Pairs processed] [Time: 2026-04-02 13:18:33] 
+..........[7000000 Read-Pairs processed] [Time: 2026-04-02 13:19:47] 
+..........[8000000 Read-Pairs processed] [Time: 2026-04-02 13:21:12] 
+..........[9000000 Read-Pairs processed] [Time: 2026-04-02 13:22:39] 
+..........[10000000 Read-Pairs processed] [Time: 2026-04-02 13:24:04] 
+..........[11000000 Read-Pairs processed] [Time: 2026-04-02 13:25:33] 
+..........[12000000 Read-Pairs processed] [Time: 2026-04-02 13:25:50] 
+..........[13000000 Read-Pairs processed] [Time: 2026-04-02 13:25:57] 
+..........[14000000 Read-Pairs processed] [Time: 2026-04-02 13:26:02] 
+..
+NOTE: Unmatched Read Buffer Size > 800000 [Mem usage:[8GB / 8GB]]
+........[15000000 Read-Pairs processed] [Time: 2026-04-02 13:26:53] 
+..........[16000000 Read-Pairs processed] [Time: 2026-04-02 13:27:26] 
+..........[17000000 Read-Pairs processed] [Time: 2026-04-02 13:28:50] 
+..........[18000000 Read-Pairs processed] [Time: 2026-04-02 13:29:22] 
+..........[19000000 Read-Pairs processed] [Time: 2026-04-02 13:29:34] 
+..........[20000000 Read-Pairs processed] [Time: 2026-04-02 13:30:49] 
+..........[21000000 Read-Pairs processed] [Time: 2026-04-02 13:32:28] 
+..........[22000000 Read-Pairs processed] [Time: 2026-04-02 13:34:05] 
+..........[23000000 Read-Pairs processed] [Time: 2026-04-02 13:35:43] 
+..........[24000000 Read-Pairs processed] [Time: 2026-04-02 13:37:17] 
+..........[25000000 Read-Pairs processed] [Time: 2026-04-02 13:38:46] 
+..........[26000000 Read-Pairs processed] [Time: 2026-04-02 13:40:10] 
+..........[27000000 Read-Pairs processed] [Time: 2026-04-02 13:42:26] 
+.
+Finished reading SAM. Read: 27111813 reads/read-pairs.
+Finished reading SAM. Used: 16376632 reads/read-pairs.
+[Time: 2026-04-02 13:43:26] [Mem usage: [7GB / 9GB]] [Elapsed Time: 00:35:17.0559]
+> Read Stats:
+>   READ_PAIR_OK                   16376632
+>   TOTAL_READ_PAIRS               27111813
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   10735181
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+QoRTs completed WITH WARNINGS! See log for details.
+Done.
+Time spent on setup:           00:01:31.0818
+Time spent on SAM iteration:   00:33:45.0741
+                               (1.2448448209642047 minutes per million read-pairs)
+                               (2.0608633081576233 minutes per million read-pairs used)
+Time spent on file output:     00:00:44.0411
+Total runtime:                 00:36:01.0970
+Done. (Thu Apr 02 13:44:10 EDT 2026)
+Starting QoRTs v1.3.6 (Compiled Tue Sep 25 11:21:46 EDT 2018)
+Starting time: (Thu Apr 02 13:45:25 EDT 2026)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=SRR19243443/alignments/SRR19243443.Aligned.sortedByCoord.out.bam
+  INPUT_ARG(gtffile)=/athena/angsd/scratch/klh4012/work/Project/referenceGenome/refgene/hg38.refGene.gtf
+  INPUT_ARG(outdir)=SRR19243443/qorts_new
+  INPUT_ARG(stranded)=true
+  INPUT_ARG(coordSorted)=true
+Created Log File: SRR19243443/qorts_new/QC.13WvbXMz03jy.log
+Warning: run-in-progress file "SRR19243443/qorts_new/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+Starting QC
+[Time: 2026-04-02 13:45:25] [Mem usage: [30MB / 643MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+NOTE: Function "overlapMatch" requires function "mismatchEngine". Adding "mismatchEngine" to the active function list...
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, InsertSize, 
+        JunctionCalcs, NVC, QualityScoreDistribution, StrandCheck, 
+        chromCounts, cigarLocusCounts, mismatchEngine, overlapMatch, 
+        readLengthDistro, writeBiotypeCounts, writeClippedNVC, 
+        writeDESeq, writeDEXSeq, writeGeneBody, writeGeneCounts, 
+        writeGenewiseGeneBody, writeJunctionSeqCounts, 
+        writeKnownSplices, writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+NOTE: Read length is not consistent.
+   In the first 10000 reads, read length varies from 36 to 76 (param maxReadLength=76)
+Note that using data that is hard-clipped prior to alignment is NOT recommended, because this makes it difficult (or impossible) to determine the sequencer read-cycle of each nucleotide base. This may obfuscate cycle-specific artifacts, trends, or errors, the detection of which is one of the primary purposes of QoRTs!In addition, hard clipping (whether before or after alignment) removes quality score data, and thus quality score metrics may be misleadingly optimistic. A MUCH preferable method of removing undesired sequence is to replace such sequence with N's, which preserves the quality score and the sequencer cycle information.
+   WARNING WARNING WARNING: Read length is not consistent, AND "--maxReadLength" option is not set!
+      QoRTs has ATTEMPTED to determine the maximum read length (76).
+      It is STRONGLY recommended that you use the --maxReadLength option 
+      to set the maximum possible read length, or else errors may occur if/when 
+      reads longer than 76 appear.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 76.
+[Time: 2026-04-02 13:45:31] [Mem usage: [271MB / 811MB]] [Elapsed Time: 00:00:05.0539]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2026-04-02 13:46:44] [Mem usage: [2952MB / 7GB]] [Elapsed Time: 00:01:19.0056]
+..........[1000000 Read-Pairs processed] [Time: 2026-04-02 13:48:56] 
+..........[2000000 Read-Pairs processed] [Time: 2026-04-02 13:50:18] 
+..........[3000000 Read-Pairs processed] [Time: 2026-04-02 13:51:39] 
+.........
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[1871MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[2431MB / 8GB]]
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[2852MB / 8GB]]
+.[4000000 Read-Pairs processed] [Time: 2026-04-02 13:52:59] 
+..........[5000000 Read-Pairs processed] [Time: 2026-04-02 13:53:59] 
+..........[6000000 Read-Pairs processed] [Time: 2026-04-02 13:55:06] 
+..........[7000000 Read-Pairs processed] [Time: 2026-04-02 13:56:27] 
+..........[8000000 Read-Pairs processed] [Time: 2026-04-02 13:57:53] 
+..........[9000000 Read-Pairs processed] [Time: 2026-04-02 13:59:15] 
+......
+NOTE: Unmatched Read Buffer Size > 800000 [Mem usage:[2347MB / 8GB]]
+....[10000000 Read-Pairs processed] [Time: 2026-04-02 14:00:24] 
+..........[11000000 Read-Pairs processed] [Time: 2026-04-02 14:00:29] 
+..........[12000000 Read-Pairs processed] [Time: 2026-04-02 14:00:33] 
+..........[13000000 Read-Pairs processed] [Time: 2026-04-02 14:00:57] 
+..........[14000000 Read-Pairs processed] [Time: 2026-04-02 14:01:03] 
+..........[15000000 Read-Pairs processed] [Time: 2026-04-02 14:01:11] 
+..........[16000000 Read-Pairs processed] [Time: 2026-04-02 14:01:13] 
+..........[17000000 Read-Pairs processed] [Time: 2026-04-02 14:02:44] 
+..........[18000000 Read-Pairs processed] [Time: 2026-04-02 14:03:37] 
+..........[19000000 Read-Pairs processed] [Time: 2026-04-02 14:03:41] 
+..........[20000000 Read-Pairs processed] [Time: 2026-04-02 14:03:58] 
+..........[21000000 Read-Pairs processed] [Time: 2026-04-02 14:04:31] 
+..........[22000000 Read-Pairs processed] [Time: 2026-04-02 14:06:23] 
+..........[23000000 Read-Pairs processed] [Time: 2026-04-02 14:07:46] 
+..........[24000000 Read-Pairs processed] [Time: 2026-04-02 14:09:08] 
+..........[25000000 Read-Pairs processed] [Time: 2026-04-02 14:10:26] 
+..........[26000000 Read-Pairs processed] [Time: 2026-04-02 14:11:33] 
+..........[27000000 Read-Pairs processed] [Time: 2026-04-02 14:12:46] 
+..........[28000000 Read-Pairs processed] [Time: 2026-04-02 14:13:59] 
+......
+Finished reading SAM. Read: 28670368 reads/read-pairs.
+Finished reading SAM. Used: 15267203 reads/read-pairs.
+[Time: 2026-04-02 14:17:04] [Mem usage: [7GB / 9GB]] [Elapsed Time: 00:31:38.0328]
+> Read Stats:
+>   READ_PAIR_OK                   15267203
+>   TOTAL_READ_PAIRS               28670368
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   13403165
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+QoRTs completed WITH WARNINGS! See log for details.
+Done.
+Time spent on setup:           00:01:19.0056
+Time spent on SAM iteration:   00:30:19.0273
+                               (1.057421609191297 minutes per million read-pairs)
+                               (1.9857380992881712 minutes per million read-pairs used)
+Time spent on file output:     00:00:43.0572
+Total runtime:                 00:32:21.0901
+Done. (Thu Apr 02 14:17:47 EDT 2026)
+Starting QoRTs v1.3.6 (Compiled Tue Sep 25 11:21:46 EDT 2018)
+Starting time: (Thu Apr 02 14:19:13 EDT 2026)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=SRR19243444/alignments/SRR19243444.Aligned.sortedByCoord.out.bam
+  INPUT_ARG(gtffile)=/athena/angsd/scratch/klh4012/work/Project/referenceGenome/refgene/hg38.refGene.gtf
+  INPUT_ARG(outdir)=SRR19243444/qorts_new
+  INPUT_ARG(stranded)=true
+  INPUT_ARG(coordSorted)=true
+Created Log File: SRR19243444/qorts_new/QC.TbAPHAtwHHTP.log
+Warning: run-in-progress file "SRR19243444/qorts_new/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+Starting QC
+[Time: 2026-04-02 14:19:13] [Mem usage: [30MB / 643MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in paired-end mode.
+QoRTs is Running in any-sorted mode.
+NOTE: Function "overlapMatch" requires function "mismatchEngine". Adding "mismatchEngine" to the active function list...
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, InsertSize, 
+        JunctionCalcs, NVC, QualityScoreDistribution, StrandCheck, 
+        chromCounts, cigarLocusCounts, mismatchEngine, overlapMatch, 
+        readLengthDistro, writeBiotypeCounts, writeClippedNVC, 
+        writeDESeq, writeDEXSeq, writeGeneBody, writeGeneCounts, 
+        writeGenewiseGeneBody, writeJunctionSeqCounts, 
+        writeKnownSplices, writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+NOTE: Read length is not consistent.
+   In the first 10000 reads, read length varies from 35 to 76 (param maxReadLength=76)
+Note that using data that is hard-clipped prior to alignment is NOT recommended, because this makes it difficult (or impossible) to determine the sequencer read-cycle of each nucleotide base. This may obfuscate cycle-specific artifacts, trends, or errors, the detection of which is one of the primary purposes of QoRTs!In addition, hard clipping (whether before or after alignment) removes quality score data, and thus quality score metrics may be misleadingly optimistic. A MUCH preferable method of removing undesired sequence is to replace such sequence with N's, which preserves the quality score and the sequencer cycle information.
+   WARNING WARNING WARNING: Read length is not consistent, AND "--maxReadLength" option is not set!
+      QoRTs has ATTEMPTED to determine the maximum read length (76).
+      It is STRONGLY recommended that you use the --maxReadLength option 
+      to set the maximum possible read length, or else errors may occur if/when 
+      reads longer than 76 appear.
+   Sorting Note: Reads are not sorted by name (This is OK).
+   Sorting Note: Reads are sorted by position (This is OK).
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 76.
+[Time: 2026-04-02 14:19:18] [Mem usage: [265MB / 811MB]] [Elapsed Time: 00:00:05.0301]
+Compiling flat feature annotation, internally in memory...
+Internal flat feature annotation compiled!
+QC Utilities Generated!
+[Time: 2026-04-02 14:20:32] [Mem usage: [2954MB / 7GB]] [Elapsed Time: 00:01:19.0156]
+..........[1000000 Read-Pairs processed] [Time: 2026-04-02 14:22:51] 
+..........[2000000 Read-Pairs processed] [Time: 2026-04-02 14:24:16] 
+..........[3000000 Read-Pairs processed] [Time: 2026-04-02 14:25:40] 
+..........[4000000 Read-Pairs processed] [Time: 2026-04-02 14:27:01] 
+....
+NOTE: Unmatched Read Buffer Size > 100000 [Mem usage:[2576MB / 8GB]]
+    (This is generally not a problem, but if this increases further then OutOfMemoryExceptions
+    may occur.
+    If memory errors do occur, either increase memory allocation or sort the bam-file by name
+    and rerun with the '--nameSorted' option.
+    This might also indicate that your dataset contains an unusually large number of
+    chimeric read-pairs. Or it could occur simply due to the presence of genomic
+    loci with extremly high coverage. It may also indicate a SAM/BAM file that 
+    does not adhere to the standard SAM specification.)
+NOTE: Unmatched Read Buffer Size > 200000 [Mem usage:[3278MB / 8GB]]
+NOTE: Unmatched Read Buffer Size > 400000 [Mem usage:[3700MB / 8GB]]
+......[5000000 Read-Pairs processed] [Time: 2026-04-02 14:27:41] 
+..........[6000000 Read-Pairs processed] [Time: 2026-04-02 14:28:59] 
+..........[7000000 Read-Pairs processed] [Time: 2026-04-02 14:30:23] 
+..........[8000000 Read-Pairs processed] [Time: 2026-04-02 14:31:45] 
+..........[9000000 Read-Pairs processed] [Time: 2026-04-02 14:33:11] 
+..........[10000000 Read-Pairs processed] [Time: 2026-04-02 14:34:33] 
+.......
+NOTE: Unmatched Read Buffer Size > 800000 [Mem usage:[7GB / 9GB]]
+...[11000000 Read-Pairs processed] [Time: 2026-04-02 14:35:43] 
+..........[12000000 Read-Pairs processed] [Time: 2026-04-02 14:35:50] 
+..........[13000000 Read-Pairs processed] [Time: 2026-04-02 14:35:54] 
+..........[14000000 Read-Pairs processed] [Time: 2026-04-02 14:36:23] 
+..........[15000000 Read-Pairs processed] [Time: 2026-04-02 14:37:24] 
+..........[16000000 Read-Pairs processed] [Time: 2026-04-02 14:38:15] 
+..........[17000000 Read-Pairs processed] [Time: 2026-04-02 14:38:24] 
+..........[18000000 Read-Pairs processed] [Time: 2026-04-02 14:39:23] 
+..........[19000000 Read-Pairs processed] [Time: 2026-04-02 14:40:49] 
+..........[20000000 Read-Pairs processed] [Time: 2026-04-02 14:42:18] 
+..........[21000000 Read-Pairs processed] [Time: 2026-04-02 14:43:46] 
+..........[22000000 Read-Pairs processed] [Time: 2026-04-02 14:45:07] 
+..........[23000000 Read-Pairs processed] [Time: 2026-04-02 14:46:21] 
+..........[24000000 Read-Pairs processed] [Time: 2026-04-02 14:47:32] 
+..........[25000000 Read-Pairs processed] [Time: 2026-04-02 14:49:28] 
+.....
+Finished reading SAM. Read: 25502166 reads/read-pairs.
+Finished reading SAM. Used: 16210566 reads/read-pairs.
+[Time: 2026-04-02 14:50:42] [Mem usage: [4734MB / 9GB]] [Elapsed Time: 00:31:28.0761]
+> Read Stats:
+>   READ_PAIR_OK                   16210566
+>   TOTAL_READ_PAIRS               25502166
+>   DROPPED_NOT_PROPER_PAIR        0
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        0
+>   DROPPED_PAIR_STRANDS_MISMATCH  0
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   9291600
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+QoRTs completed WITH WARNINGS! See log for details.
+Done.
+Time spent on setup:           00:01:19.0156
+Time spent on SAM iteration:   00:30:09.0605
+                               (1.1822525192565996 minutes per million read-pairs)
+                               (1.8598980442755668 minutes per million read-pairs used)
+Time spent on file output:     00:00:43.0523
+Total runtime:                 00:32:12.0284
+Done. (Thu Apr 02 14:51:25 EDT 2026)

@@ -1,0 +1,48 @@
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243478/SRR19243478_1_val_1.fq.gz SRR19243478/SRR19243478_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243478/alignments/SRR19243478.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:04:32 ..... started STAR run
+Mar 20 16:04:32 ..... loading genome
+Mar 20 16:04:58 ..... started mapping
+Mar 20 16:10:54 ..... finished mapping
+Mar 20 16:10:56 ..... started sorting BAM
+Mar 20 16:11:59 ..... finished successfully
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243479/SRR19243479_1_val_1.fq.gz SRR19243479/SRR19243479_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243479/alignments/SRR19243479.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:12:00 ..... started STAR run
+Mar 20 16:12:00 ..... loading genome
+Mar 20 16:12:25 ..... started mapping
+Mar 20 16:17:41 ..... finished mapping
+Mar 20 16:17:43 ..... started sorting BAM
+Mar 20 16:18:36 ..... finished successfully
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243480/SRR19243480_1_val_1.fq.gz SRR19243480/SRR19243480_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243480/alignments/SRR19243480.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:18:37 ..... started STAR run
+Mar 20 16:18:37 ..... loading genome
+Mar 20 16:18:59 ..... started mapping
+Mar 20 16:23:36 ..... finished mapping
+Mar 20 16:23:38 ..... started sorting BAM
+Mar 20 16:24:12 ..... finished successfully
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243481/SRR19243481_1_val_1.fq.gz SRR19243481/SRR19243481_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243481/alignments/SRR19243481.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:24:14 ..... started STAR run
+Mar 20 16:24:14 ..... loading genome
+Mar 20 16:24:36 ..... started mapping
+Mar 20 16:29:34 ..... finished mapping
+Mar 20 16:29:36 ..... started sorting BAM
+Mar 20 16:30:21 ..... finished successfully
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243482/SRR19243482_1_val_1.fq.gz SRR19243482/SRR19243482_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243482/alignments/SRR19243482.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:30:24 ..... started STAR run
+Mar 20 16:30:24 ..... loading genome
+Mar 20 16:30:45 ..... started mapping
+Mar 20 16:35:24 ..... finished mapping
+Mar 20 16:35:26 ..... started sorting BAM
+Mar 20 16:36:08 ..... finished successfully
+	/athena/angsd/scratch/mef3005/share/envs/angsd/bin/STAR-avx2 --runMode alignReads --runThreadN 8 --genomeDir /athena/angsd/scratch/klh4012/work/Project/referenceGenome/ucsc_hg38_index --readFilesIn SRR19243483/SRR19243483_1_val_1.fq.gz SRR19243483/SRR19243483_2_val_2.fq.gz --readFilesCommand zcat --sjdbOverhang 75 --outSAMunmapped Within --outSAMtype BAM SortedByCoordinate --outFileNamePrefix SRR19243483/alignments/SRR19243483.
+	STAR version: 2.7.11a   compiled: 2023-09-15T02:58:53+0000 :/opt/conda/conda-bld/star_1694746407721/work/source
+Mar 20 16:36:11 ..... started STAR run
+Mar 20 16:36:11 ..... loading genome
+Mar 20 16:36:33 ..... started mapping
+Mar 20 16:42:09 ..... finished mapping
+Mar 20 16:42:11 ..... started sorting BAM
+Mar 20 16:43:02 ..... finished successfully
